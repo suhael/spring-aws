@@ -1,0 +1,23 @@
+server:
+  port: 5000
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        incoming:
+          destination: my-first-stream
+          group: incoming.group
+          consumer:
+            checkpointMode: manual
+
+
+cloud:
+  aws:
+    credentials:
+      use-default-aws-credentials-chain: false
+    region:
+      static: eu-west-1
+      auto: false
+    stack:
+      auto: false
