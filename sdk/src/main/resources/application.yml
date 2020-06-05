@@ -1,0 +1,12 @@
+#
+#localstack:
+#  kinesis:
+#    url: http://localhost:4568
+#
+#kinesis:
+#  stream: my-first-stream
+server:
+  port : 1111
+
+dynamo.endpointURI: http://localhost:4569
+kinesis.endpointURI: http://localhost:4568

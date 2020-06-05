@@ -1,0 +1,15 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: foo
+      secretKey: bar
+      use-default-aws-credentials-chain: false
+      instance-profile: false
+    region:
+      static: eu-west-1
+    stack:
+      auto: false
+
+localstack:
+  kinesis:
+    url: http://localhost:4568
