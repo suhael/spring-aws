@@ -5,11 +5,15 @@ spring:
   cloud:
     stream:
       bindings:
-        incoming:
+        input:
           destination: my-first-stream
-          group: incoming.group
+          group: myStream-group
+          content-type: application/json
           consumer:
-            checkpointMode: manual
+            checkpointMode: batch
+        output:
+          destination: my-first-stream
+          content-type: application/json
 
 
 cloud:
