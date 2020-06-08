@@ -1,0 +1,2 @@
+dynamo.endpointURI: http://localhost:4566
+kinesis.endpointURI: http://localhost:4566
